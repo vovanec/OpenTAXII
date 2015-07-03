@@ -37,7 +37,7 @@ class ContentBlock(Timestamped):
 
     content = Column(Text)
 
-    binding_id = Column(String(MAX_STR_LEN))
+    binding_id = Column(String(MAX_STR_LEN), index=True)
     binding_subtype = Column(String(MAX_STR_LEN))
 
     def __repr__(self):
